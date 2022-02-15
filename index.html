@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Sign-Up-Form</title>
+</head>
+<body>
+
+    <div class="cont">
+        
+        <img src="img/arctic15.jpg" alt="photo">
+
+        <div class="form">
+            <p id="p1">This is not a real online service! You know you need somthing like this in your 
+                life to help you realize your deepest dreams. 
+            Sign up <em>now</em> to get started. </p>
+
+            <p> You <em>Know</em> you want to.</p>
+
+            <form action="" id="myForm" method="post">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                        <!-- First name -->
+                <div class="group">
+                    <input type="text" class="control" placeholder="Your Name" name="fist-name" id="in1" required>
+                    <label for="in1" class="label" >FIRST NAME</label>
+
+                </div>
+                        <!-- Last name -->
+                <div class="group">
+                    <input type="text" class="control" placeholder="Your Last" name="last-name" id="in2" required>
+                    <label for="in2" class="label" >LAST NAME</label>
+                </div>
+                        <!-- Email -->
+                <div class="group">
+                    <input type="email" class="control" name="email" id="in3" placeholder="example@email.com" required pattern="[\w\.]+@[a-z]+\.[a-z]{3}">
+                    <label for="in3" class="label">EMAIL</label>
+                </div>
+                        <!-- Phone -->
+                <div class="group">
+                    <input type="tel" autocomplete="address-level4" class="control" name="phone" id="in4" placeholder=" " required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <label for="in4" class="label">PHONE NUMBER 123-123-1234</label>
+                </div>    
+                
+                        <!-- pwd -->
+                <div class="group">
+                    <input type="password" class="control" placeholder=" " name="pwd" id="password" required pattern="[\w]{8,}">
+                    <label for="password" class="label">PASSWORD</label>
+                </div>    
+                
+                        <!-- verify pwd-->
+                <div class="group">
+                    <input type="password" class="control" placeholder=" " name="conf" id="pwdconfirm" required pattern="[\w]{8,}">    
+                    <label for="pwdconfirm" class="label">CONFIRM PASSWORD</label>
+                </div>  
+                                        
+                <button type="button" 
+                             hidden data-pressed="false"
+                             class="reveal-password" 
+                             aria-controls="password"
+                             data-text-show="Show password"
+                             data-text-hide="Hide password">
+                                Show password
+                    </button>
+
+                    <span data-text-shown="Your password is shown"
+                          data-text-hidden="Your password is hidden"
+                          class="visually-hidden password-announce"
+                          aria-live="polite">
+                        </span>
+
+                </fieldset>
+
+                <button class="btn" >Create Account</button>
+            </form>
+
+            <p>Already have an account? <a href="#"> <button class="login">Log in</button> </a> </p>
+        
+            </div>
+        
+        </div>    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
