@@ -3,8 +3,8 @@
   src: url(/css/font.css);
 }
 :root{
-      --login : 4vw;
-      --show : 5vw;
+      --login : 1vw;
+      --create : 2vw;
 } 
 
 body {
@@ -17,19 +17,22 @@ body {
       margin-top: 25px;
       box-shadow: 5px 5px rgba(50, 50, 93, 0.1);
       border-radius: 5px;
-      padding: 20px;
+      display: flexbox;
+      padding: 10px;
       background-color: rgb(216, 220, 225);
+      margin-bottom: 20px;
+      margin-left: 25px;
       }
 
 img {
-
       box-shadow: 5px 5px rgba(21, 21, 22, 0.15);
       border-radius: 5px;
     }
 
 p {
-      margin: 25px;
-      font-family: my-cool-font, sans-serif;
+      margin: 20px;
+      margin-top: 10px;
+      font-family: 'Roboto', sans-serif;
       font-weight: bold;
 }
   
@@ -67,9 +70,11 @@ input:invalid {
   transition: all 0.3s;
 
 }
-
+.label[for='in4']{
+  font-size: 12px;
+}
 .label {
-  font-size: 1em;
+  font-size: 15px;
   color: #aaa;
   display: block;
   opacity: 1;
@@ -109,7 +114,7 @@ label {
 /* ********************************************************** */
 
 #p1 {
-  margin-top: 100px;
+  margin-top: 60px;
   max-width: 80ch;
 }
 
@@ -117,7 +122,7 @@ label {
 /* ******************** Show/Hide pwd ******************** */
 
 .btn{
-    padding: auto;
+    padding: var(--create);
     margin: 10px;
 }
 
@@ -131,7 +136,6 @@ label {
 .login {
   background-color: rgb(20, 178, 206);
   border: none;
-  padding: 5px;
   border-radius: 5px;
 }
 
@@ -140,7 +144,7 @@ label {
   /* width: 1px !important; */
   /* height: 1px !important; */
   /* margin: 0 !important;
-  padding: 0 !important; */
+ /* padding: 0 !important; */
   /* overflow: hidden !important; */
   /* clip: rect(0 0 0 0) !important; */
   -webkit-clip-path: inset(50%) !important;
@@ -149,26 +153,25 @@ label {
   white-space: nowrap !important;
 }
 
-.has-js::-ms-reveal {
+/* .has-js::-ms-reveal {
   display: none;
 }
 
 .has-js::reveal {
   display: none;
-}
+} */
 
 .reveal-password {
-  width: var(--show);
-  padding: auto;
+  /* width: var(--show); */
+  padding: 10px;
   text-transform: capitalize;
   border: none;
   background: rgb(26, 178, 224);
   border-radius: 5px;
-  display: inline-grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  margin-top: 0;
-  margin-left: 150px;
+  display: inline-grid; 
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  margin: 5px;
 }
 
 .reveal-password:before {
@@ -176,4 +179,24 @@ label {
   grid-area: 1 / 1;
   height: 0px;
   visibility: hidden;
+}
+
+
+@media only screen and (max-width: 650px) {
+  body {
+    background-color: rgb(242, 239, 86);
+  }
+  fieldset{
+    display: block;
+  }
+  .form{
+    width: 100%;
+    /* overflow: scroll; */
+  }
+  .label{
+    font-size: 10px;
+  }
+  p{
+    font-size: 10px;
+  }
 }

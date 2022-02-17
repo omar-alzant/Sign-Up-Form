@@ -12,9 +12,9 @@
 <body>
 
         
-        <img src="img/arctic15.jpg" alt="photo">
+        <!-- <img src="img/arctic15.jpg" alt="photo"> -->
 
-        <div class="form">
+        <div class="form" style="float: right;">
             <p id="p1">This is not a real online service! You know you need somthing like this in your 
                 life to help you realize your deepest dreams. 
             Sign up <em>now</em> to get started. </p>
@@ -50,10 +50,9 @@
                 <div class="group">
                     <input type="password" class="control" placeholder=" " name="pwd" id="password" required pattern="[\w]{8,}">
                     <label for="password" class="label">PASSWORD</label>
-                </div>    
-                
-                        <!-- verify pwd-->
-                <div class="group">
+                </div>
+
+                 <div class="group">
                     <input type="password" class="control" placeholder=" " name="conf" id="pwdconfirm" required pattern="[\w]{8,}">    
                     <label for="pwdconfirm" class="label">CONFIRM PASSWORD</label>
                 </div>  
@@ -65,13 +64,13 @@
                              data-text-show="Show password"
                              data-text-hide="Hide password">
                                 Show password
-                    </button>
 
                     <span data-text-shown="Your password is shown"
                           data-text-hidden="Your password is hidden"
                           class="visually-hidden password-announce"
                           aria-live="polite">
                         </span>
+                    </button>
 
                 </fieldset>
 
