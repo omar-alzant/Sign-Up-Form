@@ -74,11 +74,11 @@ input:invalid {
   font-size: 12px;
 }
 .label {
-  font-size: 15px;
+  font-size: 10px;
   color: #aaa;
   display: block;
   opacity: 1;
-  transform: translateY(-1.25em);
+  transform: translateY(-1.6em);
   transform-origin: 1 0;
   transition: all 0.3s;
 }
